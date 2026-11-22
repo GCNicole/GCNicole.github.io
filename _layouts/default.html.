@@ -5,27 +5,27 @@
 
 <html lang="{{ site.lang }}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">    # Lo usaremos para que se vean correctamente las tildes y la ñ
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    # Esto hace que la pagina se adapte correctamente al móvil
   <meta name="description" content="{{ site.description }}">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>  # Esto sirve para que aparezca el texto de la pestaña del navegador.
   <link rel="stylesheet" href="{{ '/assets/css/estilos.css' | relative_url }}">
 </head>
 <body>
 
   <!-- Cabecera: nombre del blog, lema y menú de navegación -->
-  <header class="cabecera">
+  <header class="cabecera">    # Esto será la cabecera del blog con su nombre
     <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="lema">{{ site.description }}</p>
 
-    <nav class="menu">
+    <nav class="menu">    # Para el menu de navegacion
       <ul>
         <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contenido: aquí Jekyll inserta cada página o entrada -->
+  <!-- Contenido, aquí con Jekyll insertaremos cada página o entrada -->
   <main class="contenido">
     {{ content }}
   </main>
