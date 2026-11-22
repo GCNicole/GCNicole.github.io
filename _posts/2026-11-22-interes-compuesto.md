@@ -1,6 +1,7 @@
 ---
 layout: entrada
 title: "El interés compuesto: por qué empezar pronto marca la diferencia"
+category: inversion
 date: 2026-11-22 18:00:00 +0100
 resumen: "Qué es el interés compuesto, en qué se diferencia del simple y por qué el tiempo es tu mejor aliado al ahorrar."
 imagen: /assets/img/interes_compuesto.jpg
