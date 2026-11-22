@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- Plantilla para cada entrada del blog. Esta plantilla va dentro de la plantilla principal -->
+
+<article class="entrada">
+  <h1>{{ page.title }}</h1>
+  <p class="fecha">Publicado el {{ page.date | date: "%d/%m/%Y" }} por {{ site.author }}</p>
+
+  <!-- Si la entrada tiene imagen principal, se mostrará -->
+  {% if page.imagen %}
+  <img class="imagen-principal" src="{{ page.imagen }}" alt="{{ page.title }}">
+  {% endif %}
+
+  {{ content }}
+</article>
+
+<!-- Enlaces para ir a la entrada anterior y a la siguiente, esto es para la parte de navegabilidad que comenta la actividad -->
+<nav class="navegacion-entradas">
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}">&larr; Anterior: {{ page.previous.title }}</a>
+  {% endif %}
+
+  {% if page.next %}
+  <a href="{{ page.next.url }}">Siguiente: {{ page.next.title }} &rarr;</a>
+  {% endif %}
+</nav>
+
+<a class="volver" href="/">Volver al inicio</a>
