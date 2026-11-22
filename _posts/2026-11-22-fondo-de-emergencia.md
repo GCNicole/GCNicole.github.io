@@ -1,6 +1,7 @@
 ---
 layout: entrada
 title: "El fondo de emergencia: tu colchón para imprevistos"
+category: ahorro
 date: 2026-11-22 12:00:00 +0100
 resumen: "Qué es un fondo de emergencia, cuánto dinero deberías tener guardado y dónde es mejor tenerlo."
 imagen: /assets/img/fondo_emergencia.jpg
