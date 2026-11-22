@@ -1,0 +1,26 @@
+---
+layout: default
+title: Ahorro
+permalink: /categorias/ahorro/
+---
+
+<!-- Página de la categoría Ahorro: muestra solo las entradas de esta categoría -->
+
+<section id="presentacion">
+  <h1>Ahorro</h1>
+  <p>Entradas sobre cómo organizar tu dinero, hacer un presupuesto y empezar a ahorrar.</p>
+</section>
+
+<section id="lista-entradas">
+  <h2>Entradas de esta categoría</h2>
+
+  <!-- Recorremos solo las entradas que tienen category: ahorro -->
+  {% for post in site.categories.ahorro %}
+  <article class="resumen-entrada">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="fecha">{{ post.date | date: "%d/%m/%Y" }}</p>
+    <p>{{ post.resumen }}</p>
+    <a class="leer-mas" href="{{ post.url }}">Leer más</a>
+  </article>
+  {% endfor %}
+</section>
