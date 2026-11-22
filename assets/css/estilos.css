@@ -1,0 +1,13 @@
+/* Hoja de estilos del blog Finanzas en Claro */
+
+/* Imágenes: que nunca sean más anchas que el espacio donde están */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Contenido principal centrado y con un ancho cómodo para leer */
+#contenido {
+  max-width: 800px;
+  margin: 0 auto;
+}
