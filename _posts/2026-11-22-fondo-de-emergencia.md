@@ -3,7 +3,7 @@ layout: entrada
 title: "El fondo de emergencia: tu colchón para imprevistos"
 date: 2026-11-22 12:00:00 +0100
 resumen: "Qué es un fondo de emergencia, cuánto dinero deberías tener guardado y dónde es mejor tenerlo."
-imagen: /assets/img/fondoemergencia.jpg
+imagen: /assets/img/fondo_emergencia.jpg
 ---
 
 En la entrada anterior hablé de la [regla 50/30/20](/entradas/regla-50-30-20/) y de que
