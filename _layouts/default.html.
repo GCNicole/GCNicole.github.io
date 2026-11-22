@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 
-# Plantilla principal del blog
-#    Se usará en todas las páginas: cabecera, menú, contenido y pie
+<!-- Plantilla principal del blog
+     Se usará en todas las páginas: cabecera, menú, contenido y pie -->
 
 <html lang="{{ site.lang }}">
 <head>
-  <meta charset="UTF-8">    # Lo usaremos para que se vean correctamente las tildes y la ñ
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    # Esto hace que la pagina se adapte correctamente al móvil
+  <meta charset="UTF-8">    <!-- Lo usaremos para que se vean correctamente las tildes y la ñ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Esto hace que la página se adapte correctamente al móvil -->
   <meta name="description" content="{{ site.description }}">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>  # Esto sirve para que aparezca el texto de la pestaña del navegador.
-  <link rel="stylesheet" href="{{ '/assets/css/estilos.css' | relative_url }}">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>  <!-- Esto sirve para que aparezca el texto de la pestaña del navegador -->
+  <link rel="stylesheet" href="/assets/css/estilos.css">
 </head>
 <body>
 
-  <!-- Cabecera: nombre del blog, lema y menú de navegación -->
-  <header class="cabecera">    # Esto será la cabecera del blog con su nombre
-    <a class="logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="lema">{{ site.description }}</p>
+  <!-- Cabecera: nombre del blog, subtítulo y menú de navegación -->
+  <header id="cabecera">    <!-- Esto será la cabecera del blog con su nombre -->
+    <a class="titulo-blog" href="/">{{ site.title }}</a>
+    <p class="subtitulo">{{ site.description }}</p>
 
-    <nav class="menu">    # Para el menu de navegacion
+    <nav id="menu">    <!-- Para el menú de navegación -->
       <ul>
-        <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
+        <li><a href="/">Inicio</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Contenido, aquí con Jekyll insertaremos cada página o entrada -->
-  <main class="contenido">
+  <main id="contenido">
     {{ content }}
   </main>
 
   <!-- Pie de página -->
-  <footer class="pie">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} · Escrito por {{ site.author }}</p>
+  <footer id="pie-pagina">
+    <p>&copy; 2026 {{ site.title }} - Hecho por {{ site.author }} para Desarrollo de Aplicaciones en Red</p>
   </footer>
 
 </body>
