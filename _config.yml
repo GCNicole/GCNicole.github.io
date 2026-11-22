@@ -1,9 +1,6 @@
-# ==========================================================
-# Configuración del blog "Finanzas en Claro"
-# Autora: Nicole · Fecha: 22112026
-# ==========================================================
 
-# Datos generales del sitio (se usarán en las plantillas)
+# Configuración del blog "Finanzas en Claro"
+# Datos generales para usar posteriomente en la plantilla
 title: "Finanzas en Claro"
 description: "Educación financiera explicada de forma sencilla"
 author: "Nicole"
@@ -13,7 +10,7 @@ lang: es
 url: "https://gcnicole.github.io"
 baseurl: ""
 
-# Formato de la dirección de cada entrada (ej: /entradas/regla-50-30-20/)
+# Formato de la dirección de cada entrada
 permalink: /entradas/:title/
 
 # Zona horaria y procesador de Markdown
