@@ -21,6 +21,9 @@
     <nav id="menu">    <!-- Para el menú de navegación -->
       <ul>
         <li><a href="/">Inicio</a></li>
+        <li><a href="/categorias/ahorro/">Ahorro</a></li>
+        <li><a href="/categorias/inversion/">Inversión</a></li>
+        <li><a href="/categorias/deudas/">Deudas</a></li>
       </ul>
     </nav>
   </header>
