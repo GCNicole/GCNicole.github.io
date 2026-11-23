@@ -54,7 +54,7 @@ img {
 #contenido {
   flex: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -217,4 +217,91 @@ img {
 .leer-mas:hover {
   background-color: #b8963e;
   color: #ffffff;
+}
+
+/* ---------- 5. Portada con barra lateral ---------- */
+
+/* Dos columnas: las entradas ocupan el espacio que sobre y la barra lateral 300px */
+.portada {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 40px;
+  align-items: start;
+}
+
+.caja-lateral {
+  background-color: #ffffff;
+  border: 1px solid #d8d2c4;
+  border-top: 4px solid #b8963e;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.caja-lateral h3 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.caja-lateral p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Lista de categorías con el número de entradas a la derecha */
+.lista-categorias {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-categorias li {
+  padding: 8px 0;
+  border-bottom: 1px solid #d8d2c4;
+}
+
+.lista-categorias li:last-child {
+  border-bottom: none;
+}
+
+.lista-categorias a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lista-categorias span {
+  float: right;
+  color: #8a8a8a;
+}
+
+/* Caja del consejo: en verde oscuro para que destaque */
+#caja-consejo {
+  background-color: #1e3a2f;
+  color: #faf8f3;
+}
+
+#caja-consejo h3 {
+  color: #b8963e;
+}
+
+#caja-consejo p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#boton-consejo {
+  background-color: #b8963e;
+  color: #1e3a2f;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#boton-consejo:hover {
+  background-color: #faf8f3;
 }
