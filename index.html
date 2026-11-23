@@ -3,7 +3,7 @@ layout: default
 title: Inicio
 ---
 
-<!-- Página principal, es para la presentación del blog y lista de entradas -->
+<!-- Página de inicio: presentación, lista de entradas y barra lateral -->
 
 <section id="presentacion">
   <h1>Bienvenido/a a {{ site.title }}</h1>
@@ -11,13 +11,45 @@ title: Inicio
      para que cualquiera pueda empezar a organizar mejor su dinero.</p>
 </section>
 
-<section id="lista-entradas">
-  <h2>Últimas entradas</h2>
+<!-- Contenedor con dos columnas: entradas a la izquierda y barra lateral a la derecha -->
+<div class="portada">
 
-  <!-- Recorremos todas las entradas del blog y mostramos un resumen de cada una -->
-  <div class="rejilla-entradas">
-    {% for post in site.posts %}
-      {% include tarjeta.html %}
-    {% endfor %}
-  </div>
-</section>
+  <section id="lista-entradas">
+    <h2>Últimas entradas</h2>
+
+    <!-- Recorremos todas las entradas del blog y mostramos una tarjeta de cada una -->
+    <div class="rejilla-entradas">
+      {% for post in site.posts %}
+        {% include tarjeta.html %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Barra lateral con información complementaria -->
+  <aside id="barra-lateral">
+
+    <div class="caja-lateral">
+      <h3>Categorías</h3>
+      <ul class="lista-categorias">
+        <li><a href="/categorias/ahorro/">Ahorro</a> <span>({{ site.categories.ahorro | size }})</span></li>
+        <li><a href="/categorias/inversion/">Inversión</a> <span>({{ site.categories.inversion | size }})</span></li>
+        <li><a href="/categorias/deudas/">Deudas</a> <span>({{ site.categories.deudas | size }})</span></li>
+      </ul>
+    </div>
+
+    <!-- El texto de esta caja lo cambiaremos con JavaScript -->
+    <div class="caja-lateral" id="caja-consejo">
+      <h3>Consejo financiero</h3>
+      <p id="texto-consejo">Apunta todos tus gastos durante un mes: te sorprenderá en qué se va tu dinero.</p>
+      <button id="boton-consejo">Otro consejo</button>
+    </div>
+
+    <div class="caja-lateral">
+      <h3>Sobre este blog</h3>
+      <p>Soy Nicole, estudiante de Ingeniería Informática. He creado este blog para la asignatura
+         de Desarrollo de Aplicaciones en Red y para compartir lo que voy aprendiendo sobre finanzas personales.</p>
+    </div>
+
+  </aside>
+
+</div>
