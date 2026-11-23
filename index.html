@@ -15,12 +15,9 @@ title: Inicio
   <h2>Últimas entradas</h2>
 
   <!-- Recorremos todas las entradas del blog y mostramos un resumen de cada una -->
-  {% for post in site.posts %}
-  <article class="resumen-entrada">
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="fecha">{{ post.date | date: "%d/%m/%Y" }}</p>
-    <p>{{ post.resumen }}</p>
-    <a class="leer-mas" href="{{ post.url }}">Leer más</a>
-  </article>
-  {% endfor %}
+  <div class="rejilla-entradas">
+    {% for post in site.posts %}
+      {% include tarjeta.html %}
+    {% endfor %}
+  </div>
 </section>
