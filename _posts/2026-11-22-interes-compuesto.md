@@ -14,8 +14,7 @@ Una vez tienes eso cubierto, toca hablar de cómo hacer que tu ahorro crezca: el
 ## Interés simple vs interés compuesto
 
 - **Interés simple:** cada año ganas intereses solo sobre el dinero que pusiste al principio.
-- **Interés compuesto:** cada año ganas intereses sobre el dinero inicial **y también sobre
-  los intereses que ya habías ganado**. Es decir, los intereses generan más intereses.
+- **Interés compuesto:** cada año ganas intereses sobre el dinero inicial **y también sobre los intereses que ya habías ganado**. Es decir, los intereses generan más intereses.
 
 La fórmula del interés compuesto es:
 
