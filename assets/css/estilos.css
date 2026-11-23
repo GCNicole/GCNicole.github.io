@@ -310,7 +310,95 @@ img {
 #boton-consejo:hover {
   background-color: #faf8f3;
 }
+/* ---------- 7. Contenido de las entradas ---------- */
 
+/* La entrada como una hoja blanca sobre el fondo crema */
+.entrada {
+  background-color: #ffffff;
+  border: 1px solid #d8d2c4;
+  border-radius: 8px;
+  padding: 30px 5%;
+  margin-top: 20px;
+}
+
+.entrada .fecha {
+  margin-bottom: 20px;
+}
+
+.imagen-principal {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* Subtítulos de la entrada con una línea dorada debajo */
+.entrada h2 {
+  margin-top: 35px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #b8963e;
+}
+
+.entrada strong {
+  color: #1e3a2f;
+}
+
+/* Tablas */
+.entrada table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.entrada th {
+  background-color: #1e3a2f;
+  color: #faf8f3;
+  text-align: left;
+  padding: 10px;
+}
+
+.entrada td {
+  padding: 10px;
+  border-bottom: 1px solid #d8d2c4;
+}
+
+/* Filas pares con un fondo un poco más oscuro para leer mejor la tabla */
+.entrada tr:nth-child(even) td {
+  background-color: #f6f2ea;
+}
+
+/* Enlaces de entrada anterior y siguiente */
+.navegacion-entradas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.navegacion-entradas a {
+  flex: 1 1 250px;
+  background-color: #ffffff;
+  border: 1px solid #d8d2c4;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.navegacion-entradas a:hover {
+  border-color: #b8963e;
+}
+
+.volver {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
 
 /* ---------- 6. Adaptación a tablets y móviles ---------- */
 
