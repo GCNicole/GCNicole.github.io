@@ -1,14 +1,18 @@
-<!-- Tarjeta con el resumen de una entrada. Se usa en el inicio y en las categorías -->
-<article class="resumen-entrada">
+<!-- 
+Este codigo servirá para hacer las tarjetas con el resumen cada una de las entradas. 
+Se usa en el inicio y en las categorías 
+-->
 
-  {% if post.imagen %}
-  <a href="{{ post.url }}">
-    <img class="miniatura" src="{{ post.imagen }}" alt="{{ post.title }}">
+<article class="resumen-entrada">  <!-- abrimos la etiqueta clase que llamaremos resumen de la entrada-->
+
+  {% if post.imagen %}     <!-- Con este bloque mostraremos la foto en la tarjeta y si se pulsa se redirige a la entrada -->
+  <a href="{{ post.url }}">  <!-- Aqui abre un enlace, que será la foto que meteremos -->
+    <img class="miniatura" src="{{ post.imagen }}" alt="{{ post.title }}"> <!-- Es la imagen. -->
   </a>
   {% endif %}
 
-  <div class="texto-tarjeta">
-    <!-- Nombre de la categoría (inversion lo escribimos con tilde para que se vea bien) -->
+  <div class="texto-tarjeta">  <!-- Como indica el nombre esta parte, es el texto de la tarjeta, que va debajo de la foto-->
+    <!-- Aqui irá el nombre de la categoría (inversion lo escribimos con tilde para que se vea bien) -->
     <span class="etiqueta-categoria">
       {% if post.category == "inversion" %}Inversión{% else %}{{ post.category }}{% endif %}
     </span>
@@ -19,4 +23,4 @@
     <a class="leer-mas" href="{{ post.url }}">Leer más</a>
   </div>
 
-</article>
+</article>    <!-- cerramos la etiqueta-->
