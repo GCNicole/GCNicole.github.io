@@ -3,24 +3,24 @@
 <!-- Plantilla principal del blog
      Se usará en todas las páginas: cabecera, menú, contenido y pie -->
 
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}">     <!--Aqui es donde abrimos el documento html y empezamos por la cabecera. lang indica el idioma de la pagina. Se pone de esta manera para que sea dinamico y se sutituye por el valor de la config.yml-->
 <head>
   <meta charset="UTF-8">    <!-- Lo usaremos para que se vean correctamente las tildes y la ñ -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Esto hace que la página se adapte correctamente al móvil -->
-  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- Esto hace que la página se adapte correctamente al móvil, buscado en la IA -->
+  <meta name="description" content="{{ site.description }}">     <!--descripción de la página para los buscadores, buscado con la IA-->
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>  <!-- Esto sirve para que aparezca el texto de la pestaña del navegador -->
   <link rel="stylesheet" href="/assets/css/estilos.css">
 </head>
 <body>
 
-  <!-- Cabecera: nombre del blog, subtítulo y menú de navegación -->
+  <!-- Aqui empezamos con la cabecera, el nombre del blog, subtítulo y menú de navegación -->
   <header id="cabecera">    <!-- Esto será la cabecera del blog con su nombre -->
     <a class="titulo-blog" href="/">{{ site.title }}</a>
     <p class="subtitulo">{{ site.description }}</p>
 
     <nav id="menu">    <!-- Para el menú de navegación -->
       <ul>
-        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Inicio</a></li>     <!--empezaran las categorias-->
         <li><a href="/categorias/ahorro/">Ahorro</a></li>
         <li><a href="/categorias/inversion/">Inversión</a></li>
         <li><a href="/categorias/deudas/">Deudas</a></li>
