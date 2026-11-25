@@ -1,5 +1,5 @@
-// Consejos financieros que se muestran al pulsar el botón "Otro consejo"
-// Usamos el DOM para cambiar el texto del párrafo (Tema 3)
+// Esta es la parte automatica donde se van alternando consejos financieros dandole a un boton. 
+// Usamos el DOM para cambiar el texto del párrafo 
 
 var consejos = [
   "Apunta todos tus gastos durante un mes, te sorprenderá en qué se va tu dinero.",
@@ -26,10 +26,8 @@ function mostrarOtroConsejo() {
   while (nuevo === consejoActual) {
     nuevo = Math.floor(Math.random() * consejos.length);
   }
-
   consejoActual = nuevo;
   textoConsejo.textContent = consejos[nuevo];
 }
-
 // Cuando se hace clic en el botón, se ejecuta la función
 botonConsejo.addEventListener("click", mostrarOtroConsejo);
