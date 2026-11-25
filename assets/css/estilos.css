@@ -1,8 +1,6 @@
 /* ==========================================================
-   Hoja de estilos del blog Finanzas en Claro
-   Estilo: clásico financiero (verde oscuro y dorado)
-
-   Colores que uso en todo el blog:
+   Hoja de estilos del blog 
+   Estos son los colores que se han usado, sacado de la IA
      Verde oscuro:  #1e3a2f
      Dorado:        #b8963e
      Fondo crema:   #faf8f3
@@ -14,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 
-/* ---------- 1. Base general ---------- */
+/* 1. Base general */
 
 * {
   box-sizing: border-box;
@@ -60,7 +58,7 @@ img {
 }
 
 
-/* ---------- 2. Cabecera y menú ---------- */
+/*2. Cabecera y menú */
 
 #cabecera {
   background-color: #1e3a2f;
@@ -114,7 +112,7 @@ img {
   border-bottom-color: #b8963e;
 }
 
-/* ---------- 3. Páginas de entrada y pie de página ---------- */
+/*3. Páginas de entrada y pie de página*/
 
 /* El texto de las entradas con un ancho cómodo para leer */
 .entrada,
@@ -139,7 +137,7 @@ img {
   margin: 0;
 }
 
-/* ---------- 4. Tarjetas de las entradas ---------- */
+/* 4. Tarjetas de las entradas */
 
 /* Rejilla: se crean tantas columnas como quepan, de mínimo 300px cada una */
 .rejilla-entradas {
@@ -158,7 +156,7 @@ img {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Al pasar el ratón la tarjeta sube un poco y aparece una sombra */
+/* Al pasar el ratón la tarjeta sube un poco y aparece una sombra, ayuda IA */
 .resumen-entrada:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(30, 58, 47, 0.15);
@@ -219,9 +217,9 @@ img {
   color: #ffffff;
 }
 
-/* ---------- 5. Portada con barra lateral ---------- */
+/* 5. Portada con barra lateral */
 
-/* Dos columnas: las entradas ocupan el espacio que sobre y la barra lateral 300px */
+/* Dos columnas, para llenar los laterales, las entradas ocupan el espacio que sobre y la barra lateral 300px */
 .portada {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -279,7 +277,7 @@ img {
   color: #8a8a8a;
 }
 
-/* Caja del consejo: en verde oscuro para que destaque */
+/* Caja del consejo, en verde oscuro para que destaque y haya algo de intereaccion, ayuda IA */
 #caja-consejo {
   background-color: #1e3a2f;
   color: #faf8f3;
@@ -310,7 +308,7 @@ img {
 #boton-consejo:hover {
   background-color: #faf8f3;
 }
-/* ---------- 7. Contenido de las entradas ---------- */
+/*6. Contenido de las entradas*/
 
 /* La entrada como una hoja blanca sobre el fondo crema */
 .entrada {
@@ -365,7 +363,7 @@ img {
   border-bottom: 1px solid #d8d2c4;
 }
 
-/* Filas pares con un fondo un poco más oscuro para leer mejor la tabla */
+/* Filas con un fondo un poco más oscuro para leer mejor la tabla */
 .entrada tr:nth-child(even) td {
   background-color: #f6f2ea;
 }
@@ -400,7 +398,7 @@ img {
   text-decoration: none;
 }
 
-/* ---------- 6. Adaptación a tablets y móviles ---------- */
+/*7. Adaptación a tablets y móviles, para mejor uso del blog. Aqui he necesitado ayuda para poder sacar el codigo */
 
 /* Tablets y pantallas medianas: la barra lateral pasa debajo de las entradas */
 @media (max-width: 900px) {
