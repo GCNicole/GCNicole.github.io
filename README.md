@@ -50,5 +50,5 @@ Las herramientas que se han usado en la creación de este blog son las siguiente
 
 Las imágenes son de Unsplash y Pexels (uso gratuito).
 
----
-Hecho por Nicole · 2026
+
+Hecho por Nicole 2026
